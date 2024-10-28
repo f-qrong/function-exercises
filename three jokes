@@ -1,0 +1,29 @@
+# joke practise
+def first_joke():
+    print("Why do tigers have stripes? They don't want to be spotted.")
+
+
+def second_joke():
+    print("What does a house wear? Address.")
+
+
+def third_joke():
+    print("My boss told me to have a good day. So I didn't go to work.")
+
+
+while True:
+    user_choice = int(input("Enter 1 for the first joke, enter 2 for the second joke, enter 3 for the third joke: "))
+
+    if user_choice == 1:
+        first_joke()
+    elif user_choice == 2:
+        second_joke()
+    elif user_choice == 3:
+        third_joke()
+    else:
+        print("Invalid input, please enter 1, 2, or 3")
+
+    play_again = input("Do you want to play again? (yes/no): ").strip().lower()
+    if play_again != "yes":
+        print("Thank you for playing! Goodbye!")
+        break
